@@ -27,7 +27,80 @@
     <div class="container" id="page-content">
         <div class="row">
             <div class="col-xs-12">
-                <button class="btn btn-info" id="createcontest">Create Contest</button>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalDefault">Create Contest</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalDefault" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Create Contest</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="contestTitle">Title</label>
+                                            <input type="text" class="form-control" id="contestTitle" placeholder="Enter title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Begin Time</label>
+                                            <input type="date" class="form-control" id="beginDate">
+                                            <input type="time" class="form-control" id="beginTime">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>End Time</label>
+                                            <input type="date" class="form-control" id="endDate">
+                                            <input type="time" class="form-control" id="endTime">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Openness</label>
+                                            <div class="radio3">
+                                                <input type="radio" id="radio1" name="radio1" value="1">
+                                                <label for="radio1">Public(Join in this contest without password)</label>
+                                            </div>
+                                            <div class="radio3">
+                                                <input type="radio" id="radio2" name="radio1" value="2">
+                                                <label for="radio2">Protected(Join in this contest with password)</label>
+                                            </div>
+                                            <div class="radio3">
+                                                <input type="radio" id="radio3" name="radio1" value="3">
+                                                <label for="radio3">Private(Only for owner)</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="hideOthers">Show others' status</label>
+                                            <input type="checkbox" class="toggle-checkbox" name="hideOthers">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ownerViewable">Owner could see others' submission</label>
+                                            <input type="checkbox" class="toggle-checkbox" name="ownerViewable">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea class="form-control" rows="3" name="description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="problems">Problem ID</label>
+                                                <span class="description">Separate by "," up to 26</span>
+                                                <textarea class="form-control" rows="3" name="problems"></textarea>
+                                            </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
