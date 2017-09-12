@@ -13,8 +13,6 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }
     .flat-blue .navbar > .container-fluid, .flat-blue .navbar.navbar-default > .container-fluid {
       background-color: #FFF; }
-    .flat-blue .navbar .navbar-header .navbar-brand, .flat-blue .navbar.navbar-default .navbar-header .navbar-brand {
-      color: #F9F9F9; }
     .flat-blue .navbar .navbar-header .navbar-expand-toggle, .flat-blue .navbar.navbar-default .navbar-header .navbar-expand-toggle {
       color: #353d47; }
     .flat-blue .navbar .navbar-header .navbar-right-expand-toggle, .flat-blue .navbar.navbar-default .navbar-header .navbar-right-expand-toggle {
