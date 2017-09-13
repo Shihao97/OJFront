@@ -39,7 +39,7 @@
                                     <h4 class="modal-title" id="myModalLabel">Create Contest</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
+                                    <form id="contestInfo">
                                         <div class="form-group">
                                             <label for="contestTitle">Title</label>
                                             <input type="text" class="form-control" id="contestTitle" placeholder="Enter title">
@@ -69,9 +69,9 @@
                                                 <label for="radio3">Private(Only for owner)</label>
                                             </div>
                                         </div>
-                                        <div class="form-group remove" id="passwordDiv">
+                                        <div class="form-group hidden" id="passwordDiv">
                                             <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password">
+                                            <input type="password" class="form-control" id="password"  placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <label for="hideOthers">Show others' status</label>
@@ -87,13 +87,13 @@
                                         </div>
                                         <div class="form-group">
                                                 <label for="problems">Problem ID</label>
-                                                <span class="description">Separate by "," up to 26</span>
+                                                <span class="description">(Separate by "," up to 26)</span>
                                                 <textarea class="form-control" rows="3" name="problems"></textarea>
                                             </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-info">Submit</button>
+                                    <button type="button" class="btn btn-info" id="formSubmit">Submit</button>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
